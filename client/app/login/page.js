@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import LoginCard from "../../src/components/login/login-card";
 
 export default function LoginPage() {
     return <div className="min-h-screen relative">
@@ -9,6 +10,9 @@ export default function LoginPage() {
         <div className="absolute inset-0" style={{background:'linear-gradient(180deg, rgba(0,0,0,0.8), rgba(0,0,0,0.4), rgba(0,0,0,0.8))'}} />
         <div className="absolute top-4 left-4 z-10">
             <Image src="https://static.canva.com/web/images/856bac30504ecac8dbd38dbee61de1f1.svg" alt="canva web" width={90} height={30} priority/>
+        </div>
+        <div className="relative z-10 flex items-center justify-center min-h-screen">
+            <LoginCard />
         </div>
     </div>;
 }
